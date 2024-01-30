@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Assignment</title>
+    <link rel="stylesheet" href="Assignment.css">
+</head>
+<body>
+    <br>
+    <div id="nav">
+        <div id="nav1">
+            About Me
+        </div>
+        <div id="nav2">
+            <li ><a href="#fp">Home</a></li>
+            <li><a href="#bdate">Guess</a></li>
+            <li><a href="#social">Socials</a></li></div>
+        
+        </div>
+        
+    <div id="fp">
+        <div class="fpl">
+            <div id="fpbox"></div>
+            <div id="fppic">
+                <img src="Photos\mypic.png" id="mypic" onclick="changeImg()" onmouseover="secondimg()" onmouseout="firstimg()">
+            </div>
+        </div>
+        <div class="fpr">
+            <p id="ft">Hello Everyone, I'm Godfrey Ferraro Javier</p>
+            <p id="st">A BSIT Student in Pangasinan State University Urdaneta City Campus.</p>
+           </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="sp">
+        <div id="bdate">
+            <p id="guess">Guess my Birthday</p>
+            <div id="bdatecal">
+                <img src="Photos/calendar.png" id="calendar">
+                <img src="Photos/birthdayeffect.png" id="confetti">
+            </div>
+            <div>
+                <input type="number" id="age" min="1" max="31">
+                <button id="submit" onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div id="loc">
+            <p>I live in Capandanan, Sta. Maria, Pangasinan</p>
+            <div id="imgprop">
+                <img src="Photos/capandanan.png" id="locpic" onmouseover="blink()" onmouseout="stop()">
+                <img src="Photos/direction.png" id="arrow"> 
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="tp">
+        <p id="tpt">
+            More Details About Me!
+        </p>
+        <div id="box">
+            <button id="back" onclick="back()"></button>
+            <p id="content"></p>
+            <button id="next" onclick="next()"></button>
+        </div>
+
+    </div>
+    <div id="social">
+        <br>
+        <div id="connect">Connect With Me</div>
+        <br>
+        <div id="socbox">
+            <a href="https://www.facebook.com/SaturnmnmnmnmRS/"><img src="Photos/fb.png" class="socmed"></a>
+            <a href="https://www.instagram.com/bb_jango/"><img src="Photos/ig.png" class="socmed" ></a>
+            <a href="https://mail.google.com/mail/u/0/#search/godfreyjavier88%40gmail.com?compose=new"><img src="Photos/gmail.png" class="socmed" ></a>
+            <button id="tries" onclick="tries()">Click Me!</button>
+        </div>
+    </div>
+    <script src="Assignment.js"></script>
+</body>
+</html>
